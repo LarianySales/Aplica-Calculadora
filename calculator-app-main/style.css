@@ -1,0 +1,235 @@
+:root {
+    /* ### Theme 1 */
+
+    /* #### Backgrounds */
+
+    --Very-dark-leve-blue: hsl(222, 26%, 31%);
+    --Very-dark-medio-blue: hsl(223, 31%, 20%);
+    --Very-dark-desaturated-blue: hsl(224, 36%, 15%);
+
+    /* #### Keys */
+
+    --Desaturateddark-blue: hsl(225, 21%, 49%);
+    --Desaturated-dark-blue: hsl(224, 28%, 35%);
+
+    --Red: hsl(6, 63%, 50%);
+    --Dark-red: hsl(6, 70%, 34%);
+
+    --Light-grayish-orang: hsl(30, 25%, 89%);
+    --Grayish-orange: hsl(28, 16%, 65%);
+
+    /* #### Text */
+
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Theme 2 */
+
+    /* #### Backgrounds */
+
+    --Light-gray: hsl(0, 0%, 90%);
+    --Grayish-red: hsl(0, 5%, 81%);
+    --Very-light-gray: hsl(0, 0%, 93%);
+
+    /* #### Keys */
+
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+    --Very-dark-cyan: hsl(185, 58%, 25%);
+
+    --Orange: hsl(25, 98%, 40%);
+    --Dark-orange: hsl(25, 99%, 27%) --Light-grayish-yellow: hsl(45, 7%, 89%);
+    --Dark-grayish-orange: hsl(35, 11%, 61%);
+
+    /* #### Text */
+
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Theme 3 */
+
+    /* #### Backgrounds */
+
+    --Very-dark-violet: hsl(268, 75%, 9%);
+    --Very-dark-violet: hsl(268, 71%, 12%);
+
+    /* #### Keys */
+
+    --Dark-violet: hsl(281, 89%, 26%);
+    --Vivid-magenta: hsl(285, 91%, 52%);
+
+    --Pure-cyan: hsl(176, 100%, 44%);
+    --Soft-cyan: hsl(177, 92%, 70%);
+
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta: hsl(290, 70%, 36%);
+
+    /* #### Text */
+
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* theme 1 */
+body {
+    background-color: var(--Very-dark-leve-blue);
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+main {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inicio input {
+    width: 90px;
+
+}
+
+.box0 {
+    display: flex;
+    gap: 250px;
+    margin-bottom: 15px;
+}
+.box0 h1{
+    color: white;
+}
+label, .numbes{
+    color: white;
+}
+.numbes{
+    gap: 30px;
+}
+.range{
+    background: var(--Desaturateddark-blue);
+}
+.escolha{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.input {
+    width: 29rem;
+    display: flex;
+    margin: 0 5px;
+    height: 5.8rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--Very-dark-desaturated-blue);
+    text-align: end;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 50px;
+    color: white;
+
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.numbes {
+    display: flex;
+}
+
+.acoes {
+    background-color: var(--Very-dark-medio-blue);
+    padding: .2rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49vh;
+    height: 35vh;
+    border-radius: 10px;
+
+
+}
+
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button {
+    width: 93px;
+    border-radius: 10px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+
+    text-align: center;
+    height: 47px;
+    gap: 10px;
+    background-color: var(--Light-grayish-orang);
+    box-shadow: 0 3px 0 var(--Grayish-orange);
+    border: none;
+    /* box-shadow: 9px 0 1px 3px var(--Very-dark-blue); */
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.box5 button {
+    width: 195px;
+    height: 47px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box5 {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+
+}
+
+#clear {
+    background-color: var(--Desaturateddark-blue);
+    box-shadow: 0 3px 0 var(--Desaturated-dark-blue);
+
+    color: white;
+}
+
+#reset {
+    background-color: var(--Desaturateddark-blue);
+    color: white;
+    box-shadow: 0 3px 0 var(--Desaturated-dark-blue);
+}
+
+#igual {
+    background-color: var(--Red);
+    box-shadow: 0 3px 0 var(--Dark-red);
+
+}
